@@ -1,0 +1,57 @@
+Obbiettivi:
+upload/download file, 
+il file nel filesystem sarà formato da data_ora_minuto_secondo_hash_almomento del upload.file, 
+file db si salverà il nome originario del file, 
+il percorso relativo dove è salvato, tag del file, 
+descrizione, 
+proprietario del file, 
+con chi è diviso il file(e se le persone possono modificarlo),
+data di upload
+data ultima modifica
+++++ tenere traccia delle modifiche tramite diversi file e hash
+++++ se il file è un immagine png/jpeg/webp/svg permette la visualizzazione online
+++++ se è un file di testo dimensione max(200kb) permette la visualizzazione online
+++++ se è un file video .mp4 permette la visualizzazione
+++++ se è un .mp3 permette l'ascolto 
+--------------
+
+utente
+possono avere solo un icona in png/jpeg, ed è file che viene salvato tra 
+descrizione
+mail(usato per accedere)
+password(sha256)
+++++telefono
+--------------------
+
+material design
+svelte
+
+
+-----------------
+
+
+
+
+
+-----------------
+++++permission users:
+0 admin, può amministrare il sistema
+vede quandi mb/gb di spazio sono stati usati
+vede le i log
+vede le prestazioni
+vede gli utenti iscritti e quanti mb/gb di spazio stanno usando
+registra nuovi utenti 
+cambia la password agli utenti
+cambia informazioni agli utenti
+++++ vede i file degli utenti
+
+
+
+
+10 utente
+vede quanti mb/gb di spazio ha usato
+vede i suoi file e impostazioni
+
+
+
+// spostare upload in data, e fare un middleware che manda da assets/upload a data/upload 

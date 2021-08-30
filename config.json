@@ -1,0 +1,13 @@
+{
+    "database": {
+        "dbname": "spaziovuoto",
+        "url": "mongodb://localhost:27017"
+    },
+    "ports": {
+        "https": "443",
+        "http": "3000"
+    },
+    "jwtkey":"chiaveSUPERsegretaCHEnessunoSCOPRIRAmai",
+    "protection":true
+
+}

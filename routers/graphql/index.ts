@@ -73,7 +73,14 @@ class FileResolver{
       //console.log(ctx.state);
       return await dbfiles.find({owner:userID}).toArray();
     }
-  
+    
+    @Query(returns => [File])
+    async filessharedwithme(@Ctx() ctx:any) {
+      const userID = ctx.state.user.id || "test"; //|| "test"
+      
+      //console.log(ctx.state);
+      return await dbfiles.find({shared:userID}).toArray();
+    }
   
    
 }

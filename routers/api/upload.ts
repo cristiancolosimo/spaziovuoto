@@ -37,7 +37,7 @@ uploadRouter.post("/", async  (ctx,next)=>{
     let data:any = ctx.request.files;
     let insertObjs = data.data.map((file:any)=>{
 
-        return {owner: "test",//ctx.state.user.id ||
+        return {owner: ctx.state.user.id ,//ctx.state.user.id ||
             location:file.path.replace("assets/upload/",""), 
             filename:file.name,
             type:file.type,

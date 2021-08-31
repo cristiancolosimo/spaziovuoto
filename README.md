@@ -5,7 +5,7 @@ The gol of the project is create a cloud storage for upload all my data, retrive
 
 the second gol is mount the endpoint like a drive on windows/linux and manage data from os direct(for the users), like google drive or onedrive
 
-
+the third gol is REWRITE IN RUST, no joke, for increase speed and quantity of storage it can handle,
 
 The stack is formed by nodejs, typescript, mongodb, graphql, koajs
 
